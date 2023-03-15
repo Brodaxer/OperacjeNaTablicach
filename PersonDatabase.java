@@ -54,7 +54,7 @@ class PersonDatabase {
                 }
             }
             n = n - 1;
-        }while (n==0);
+        }while (n!=0);
     }
 
     public Person getPerson(int a) {
