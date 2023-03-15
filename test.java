@@ -11,11 +11,15 @@ public class test {
         test.addPerson(new Person("Kotek","bla eada ","221313"));
         test.addPerson(new Person("dupa","bladdadaa ","213"));
         test.addPerson(new Person("Szprotek","blondaeada ","213"));
+        test.addPerson(new Person("kot","sz","213"));
+        test.addPerson(new Person("lol","lol","231"));
         System.out.println(test.print());
         System.out.println(test.size());
         System.out.println(test.getPerson(1));
         test.deletePersonFromArray(test.getPerson(4));
         test.deletePersonFromArray(person2);
+        System.out.println(test.print());
+        test.deletePersonFromArray(person1);
         System.out.println(test.print());
 
     }

@@ -44,15 +44,17 @@ class PersonDatabase {
     }
 
     private void sortArray() {
-        boolean a = false;
         int n = people.length;
-            for (int i = 0; i < n-1; i++) {
+        do {
+            for (int i = 0; i < n - 1; i++) {
                 if (people[i] == null) {
                     Person t = people[i + 1];
                     people[i + 1] = people[i];
                     people[i] = t;
                 }
             }
+            n = n - 1;
+        }while (n==0);
     }
 
     public Person getPerson(int a) {
